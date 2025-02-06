@@ -1,0 +1,11 @@
+<ng-container *ngIf="visible">
+    <div class="floating-navbar">
+      <a *ngFor="let navItem of navItems" [href]="navItem.link" class="nav-item">
+        <span class="nav-text">{{ navItem.name }}</span>
+      </a>
+      <button class="login-button">
+        <span>Login</span>
+        <span class="login-underline"></span>
+      </button>
+    </div>
+  </ng-container>

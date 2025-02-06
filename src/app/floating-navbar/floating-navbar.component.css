@@ -1,0 +1,68 @@
+.floating-navbar {
+    display: flex;
+    max-width: fit-content;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(25, 28, 33, 0.02), 0 0 0 1px rgba(25, 28, 33, 0.08);
+    z-index: 5000;
+    padding: 8px 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .nav-item {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+  
+  .nav-item:hover {
+    color: #ccc;
+  }
+  
+  .nav-text {
+    display: none;
+  }
+  
+  @media (min-width: 640px) {
+    .nav-text {
+      display: block;
+      font-size: 14px;
+    }
+  }
+  
+  .login-button {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    background-color: black;
+  }
+  
+  .login-button:hover {
+    color: #ccc;
+    border-color: #ccc;
+  }
+  
+  .login-underline {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, blue, transparent);
+    transform: translateX(-50%);
+  }
