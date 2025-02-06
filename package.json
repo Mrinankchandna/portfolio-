@@ -12,7 +12,7 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular/animations": "^19.1.0",
+    "@angular/animations": "^19.1.4",
     "@angular/common": "^19.1.0",
     "@angular/compiler": "^19.1.0",
     "@angular/core": "^19.1.0",
@@ -22,11 +22,13 @@
     "@angular/platform-server": "^19.1.0",
     "@angular/router": "^19.1.0",
     "@angular/ssr": "^19.1.5",
+    "@nguniversal/express-engine": "^16.2.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "clsx": "^2.1.1",
     "express": "^4.18.2",
-    "motion": "^12.3.1",
+    "framer-motion": "^12.4.0",
+    "motion": "^12.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rxjs": "~7.8.0",
@@ -50,7 +52,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.5.1",
-    "tailwindcss": "^4.0.3",
+    "tailwindcss": "^4.0.4",
     "typescript": "~5.7.2"
   }
 }

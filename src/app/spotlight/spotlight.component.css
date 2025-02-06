@@ -1,0 +1,53 @@
+.pointer-events-none {
+    pointer-events: none; /* Disables interactions on the element */
+}
+
+.absolute {
+    position: absolute; /* Allows absolute positioning */
+}
+
+.inset-0 {
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to perfectly center the spotlight */
+}
+
+.h-full {
+    height: 100%; /* Takes full height of its parent container */
+}
+
+.w-full {
+    width: 50%; /* Takes full width of its parent container */
+}
+
+.h-screen {
+    height: 100vh; /* Takes full viewport height */
+}
+
+.w-screen {
+    width: 200vw; /* Takes full viewport width */
+}
+
+.z-40 {
+    z-index: 40; /* Ensures it is on top of other elements */
+}
+
+/* Additional styling to ensure the spotlight works with the header */
+.header {
+    position: relative;
+    overflow: hidden; /* Hides any content outside the header */
+    margin-bottom: 20px; /* Add some space below the header */
+    height: 90vh; /* Set the header to take up most of the viewport height */
+}
+
+.header .spotlight {
+    width: 80%; /* Adjust width of the spotlight */
+    height: 80%; /* Adjust height of the spotlight */
+    background: rgba(255, 255, 255, 0.2); /* Example spotlight effect */
+    border-radius: 50%; /* Circular spotlight */
+    position: absolute; /* Ensures positioning inside the header */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the spotlight */
+    z-index: 30; /* Ensures it's above other background elements */
+}

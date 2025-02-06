@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SpotlightComponent } from '../spotlight/spotlight.component';
+import { TextHoverEffectDirective } from '../text-hover-effect.directive'; // Import the directive
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, SpotlightComponent, TextHoverEffectDirective], // Add the directive here
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
-
-}
+export class HeaderComponent {}

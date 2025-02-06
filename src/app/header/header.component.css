@@ -1,0 +1,41 @@
+.header {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #ffffff; /* Text color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    height: 90vh; /* Cover half of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 48px; /* Increased font size */
+    margin-bottom: 20px; /* Increased margin */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header p {
+    font-size: 20px; /* Increased font size */
+    margin-top: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header a {
+    color: #61dafb; /* Link color */
+    text-decoration: none;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional styling for animations or effects */
+  .header {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add some space below the header */
+  }
+  

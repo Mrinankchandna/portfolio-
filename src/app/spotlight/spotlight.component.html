@@ -1,0 +1,26 @@
+<div
+  @fadeInOut
+  class="pointer-events-none absolute inset-0 h-full w-full"
+>
+  <div
+    class="absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none"
+    [ngStyle]="{
+      transform: 'translateY(' + translateY + 'px) rotate(-45deg)',
+      background: gradientFirst,
+      width: width + 'px',
+      height: height + 'px',
+      transition: 'all ' + duration + 's ease-in-out infinite alternate'
+    }"
+  ></div>
+
+  <div
+    class="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
+    [ngStyle]="{
+      transform: 'translateY(' + translateY + 'px) rotate(45deg)',
+      background: gradientFirst,
+      width: width + 'px',
+      height: height + 'px',
+      transition: 'all ' + duration + 's ease-in-out infinite alternate'
+    }"
+  ></div>
+</div>

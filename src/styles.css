@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.select-none {
+    user-select: none;
+  }
+  
+  .text-effect {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    fill: transparent;
+    font-size: 4.5rem; /* Adjust as needed */
+    stroke: #e5e5e5; /* Light neutral color */
+  }
+  
+  .dark .text-effect {
+    stroke: #262626; /* Dark neutral color */
+  }
