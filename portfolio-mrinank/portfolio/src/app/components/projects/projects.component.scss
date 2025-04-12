@@ -1,0 +1,151 @@
+.projects-section {
+  padding-top: 80px;
+  background: linear-gradient(120deg, #1d3557, #457b9d); /* Navy to teal gradient */
+  color: #f1faee; /* Soft white for contrast */
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn-filter {
+  border: none;
+  background: none;
+  color: #457b9d; /* Teal for filters */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+  background-color: #e63946; /* Coral for hover and active state */
+  color: #f1faee; /* Soft white text */
+}
+
+/* Project Cards */
+.project-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f1faee; /* Soft white card background */
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Hover lift effect */
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3); /* Stronger hover shadow */
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Overlay Effect */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 58, 138, 0.85); /* Navy overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-info {
+  color: #f1faee; /* Soft white for text */
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.project-info h4 {
+  color: #e63946; /* Coral for headings */
+  margin-bottom: 0.75rem;
+}
+
+.project-info p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Technologies Used */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.project-body {
+  padding: 1.5rem;
+}
+
+.project-body h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #457b9d; /* Teal for body headings */
+}
+
+.project-body p {
+  color: #a8dadc; /* Light teal for subtle text */
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-links a {
+  color: #457b9d; /* Teal for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #e63946; /* Coral hover effect */
+  transform: translateY(-3px); /* Lift on hover */
+}
+
+/* Contact CTA */
+.contact-cta {
+  border-radius: 10px;
+  padding: 3rem !important;
+  background: #457b9d; /* Teal background for CTA */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle depth */
+  text-align: center;
+}
+
+.contact-cta h3 {
+  color: #f1faee; /* Soft white text */
+  font-size: 1.5rem;
+}
+h2.section-title.aos-init.aos-animate {
+    color: #f1faee;
+} 

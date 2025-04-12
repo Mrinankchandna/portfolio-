@@ -1,0 +1,99 @@
+  /* Hero Section */
+  .hero {
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg, #1d3557, #457b9d); /* Navy to Teal Gradient */
+    color: #f1faee;
+  }
+
+  /* Headings */
+  .content h1 {
+    font-size: 3.5rem;
+    color: #e63946; /* Coral for standout effect */
+  }
+
+  .content h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgba(241, 250, 238, 0.9); /* Soft white with transparency */
+  }
+
+  /* Tech Icon Styling */
+  .tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(241, 250, 238, 0.1); /* Slight teal tint */
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+
+  .tech-icon:hover {
+    transform: translateY(-10px);
+    background-color: rgba(241, 250, 238, 0.3); /* Brighter highlight on hover */
+  }
+
+  .tech-icon i {
+    margin-bottom: 0.5rem;
+    color: #f1faee; /* Consistent with site theme */
+  }
+
+  /* Mouse Scroll Animation */
+  .mouse-icon {
+    margin: 0 auto;
+    display: block;
+    width: 25px;
+    height: 45px;
+    border: 2px solid rgba(241, 250, 238, 0.8); /* Lighter teal tone */
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+  }
+
+  .mouse-wheel {
+    height: 6px;
+    width: 3px;
+    margin: 2px auto 0;
+    background-color: #a8dadc; /* Subtle accent color */
+    display: block;
+    border-radius: 50%;
+    animation: mouseWheel 1.5s linear infinite;
+  }
+
+  /* Keyframe Animation */
+  @keyframes mouseWheel {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+
+  /* About Preview Section */
+  .about-preview {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #457b9d; /* Deep teal for contrast */
+    color: #f1faee;
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 2.5rem;
+      color: #e63946; /* Coral accent */
+    }
+
+    .content h2 {
+      font-size: 1.5rem;
+      color: rgba(241, 250, 238, 0.8); /* Muted white for readability */
+    }
+  }

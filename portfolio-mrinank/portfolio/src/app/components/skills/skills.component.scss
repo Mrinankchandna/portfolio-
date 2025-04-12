@@ -1,0 +1,98 @@
+.skills-section {
+  padding-top: 80px;
+  background: linear-gradient(120deg, #1d3557, #457b9d); /* Navy to teal gradient */
+  color: #f1faee; /* Soft white text for contrast */
+}
+
+/* Cards */
+.card {
+  margin-bottom: 2rem;
+  background-color: #f1faee; /* Soft white for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card-title {
+  color: #e63946; /* Coral for standout emphasis */
+  font-weight: 600;
+}
+
+/* Progress Bars */
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
+  font-weight: 500;
+  color: #457b9d; /* Teal for text consistency */
+}
+
+.skill-percentage {
+  font-weight: 600;
+  color: #e63946; /* Coral for emphasis */
+}
+
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef; /* Light gray for the background */
+}
+
+.progress-bar {
+  border-radius: 5px;
+  background-color: #457b9d; /* Teal for the progress fill */
+}
+
+/* Tool Items */
+.tool-item {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f1faee; /* Soft white for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle depth */
+}
+
+.tool-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.tool-item h5 {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #457b9d; /* Teal for text consistency */
+}
+
+/* Soft Skills */
+.soft-skill {
+  padding: 0.75rem 1rem;
+  background-color: rgba(241, 250, 238, 0.2); /* Transparent teal for background */
+  border-radius: 5px;
+  font-weight: 500;
+  color: #1d3557; /* Navy for text */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.soft-skill:hover {
+  transform: translateX(5px); /* Horizontal hover movement */
+  background-color: rgba(230, 57, 70, 0.1); /* Coral tint on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tool-item {
+    margin-bottom: 1rem;
+  }
+
+  .soft-skill {
+    font-size: 0.9rem; /* Adjusted text size for smaller screens */
+  }
+}
+h2.section-title.aos-init.aos-animate {
+    color: #f1faee;
+}   
+

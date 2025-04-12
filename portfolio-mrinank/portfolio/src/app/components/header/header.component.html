@@ -1,0 +1,34 @@
+<header class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary-gradient">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mrinank Chandna</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{'show': isMenuOpen}" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active" (click)="closeMenu()">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/skills']" routerLinkActive="active" (click)="closeMenu()">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/experience']" routerLinkActive="active" (click)="closeMenu()">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/projects']" routerLinkActive="active" (click)="closeMenu()">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<p>header works!</p>

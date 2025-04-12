@@ -1,0 +1,18 @@
+/* Styles for AppComponent */
+:host {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #4caf50; /* Example green color */
+  font-size: 2.5rem;
+}
+
+p {
+  color: #555; /* Example gray color */
+  font-size: 1rem;
+}

@@ -1,0 +1,89 @@
+<section class="hero bg-primary-gradient text-white min-vh-100 d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 content" data-aos="fade-right">
+        <h1 class="display-4 fw-bold mb-4">Hi, I'm <span class="text-light">Mrinank Chandna</span></h1>
+        <h2 class="mb-4">Software Developer</h2>
+        <p class="lead mb-4">Specialized in C#, .NET, Angular, and Web Development</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a [routerLink]="['/contact']" class="btn btn-light btn-lg">Hire Me</a>
+          <a [routerLink]="['/projects']" class="btn btn-outline-light btn-lg">View Projects</a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+        <div class="text-center p-4">
+          <div class="technology-icons d-flex flex-wrap justify-content-center gap-4 mb-4">
+            <div class="tech-icon">
+              <i class="fab fa-cuttlefish fa-3x"></i>
+              <span>C#</span>
+            </div>
+            <div class="tech-icon">
+              <i class="fab fa-angular fa-3x"></i>
+              <span>Angular</span>
+            </div>
+            <div class="tech-icon">
+              <i class="fab fa-microsoft fa-3x"></i>
+              <span>.NET</span>
+            </div>
+            <div class="tech-icon">
+              <i class="fab fa-js fa-3x"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-icon">
+              <i class="fab fa-html5 fa-3x"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="tech-icon">
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down text-center mt-5">
+      <a href="#about" class="mouse-icon">
+        <span class="mouse">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-preview py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+            <h3>Experience</h3>
+            <p>Software Developer at EPAM Systems with expertise in developing production-level applications.</p>
+            <a [routerLink]="['/experience']" class="btn btn-sm btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+            <h3>Skills</h3>
+            <p>Proficient in C#, .NET, Angular, JavaScript, HTML, CSS, and other web technologies.</p>
+            <a [routerLink]="['/skills']" class="btn btn-sm btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-project-diagram fa-3x mb-3 text-primary"></i>
+            <h3>Projects</h3>
+            <p>Developed various projects including Local Goods, DSA Hub, and more.</p>
+            <a [routerLink]="['/projects']" class="btn btn-sm btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

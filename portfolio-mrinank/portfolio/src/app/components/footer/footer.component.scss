@@ -1,0 +1,46 @@
+footer {
+  background-color: #1d3557 !important; /* Deep navy matching the theme */
+  padding: 2rem 0;
+  color: #f1faee; /* Soft white for text */
+  text-align: center; /* Center align for a clean look */
+}
+
+footer h4 {
+  color: #f1faee; /* Consistent soft white */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #a8dadc; /* Teal accent color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 0 10px;
+  font-size: 1.5rem; /* Larger icons for better visibility */
+}
+
+.social-links a:hover {
+  color: #e63946; /* Coral hover effect for contrast */
+  transform: scale(1.2); /* Slight zoom on hover for interactivity */
+}
+
+footer p {
+  font-size: 0.9rem; /* Subtle text size for additional information */
+  margin-top: 1.5rem;
+  color: rgba(241, 250, 238, 0.8); /* Lightened soft white for less emphasis */
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center; /* Center align for smaller screens */
+  }
+
+  footer h4 {
+    font-size: 1.2rem; /* Adjust heading size for mobile */
+  }
+
+  footer p {
+    font-size: 0.8rem; /* Smaller text for additional spacing */
+  }
+}

@@ -1,0 +1,150 @@
+.contact-section {
+  padding-top: 80px;
+  background: linear-gradient(120deg, #1d3557, #457b9d); /* Navy to teal gradient for consistency */
+  color: #f1faee; /* Soft white text for contrast */
+}
+
+/* Contact Info Box */
+.contact-info {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #457b9d; /* Teal for consistency */
+  color: #f1faee; /* Soft white text */
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Slightly enhanced shadow for depth */
+}
+
+.contact-info h3 {
+  color: #e63946; /* Coral for standout emphasis */
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(241, 250, 238, 0.1); /* Transparent teal for subtle background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.icon-box i {
+  font-size: 1.3rem; /* Slightly larger icons for better visibility */
+  color: #f1faee; /* White icons for visibility */
+}
+
+.info-content h5 {
+  color: #e63946; /* Coral for headings */
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.info-content p {
+  margin-bottom: 0;
+}
+
+.info-content a {
+  color: #a8dadc; /* Teal links for consistency */
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.info-content a:hover {
+  opacity: 0.8;
+  color: #e63946; /* Coral hover effect */
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(241, 250, 238, 0.1); /* Transparent teal */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f1faee; /* White icons */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: rgba(241, 250, 238, 0.2); /* Brighter highlight on hover */
+  transform: translateY(-3px); /* Subtle hover effect */
+  color: #e63946; /* Coral for hover */
+}
+
+/* Contact Form */
+.contact-form {
+  border: none;
+  border-radius: 8px;
+  background-color: #f1faee; /* Soft white background for contrast */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+  padding: 2rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #457b9d; /* Teal border */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #e63946; /* Coral focus effect */
+  box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25); /* Coral glow */
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #457b9d; /* Teal labels for consistency */
+}
+
+.btn-primary {
+  padding: 0.75rem 2rem;
+  background-color: #e63946; /* Coral button for action emphasis */
+  border: none;
+  color: #f1faee; /* White text */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d62828; /* Darker coral on hover */
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* Google Map */
+.google-map {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+@media (max-width: 992px) {
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+h2.section-title.aos-init.aos-animate {
+    color: #f1faee;
+} 

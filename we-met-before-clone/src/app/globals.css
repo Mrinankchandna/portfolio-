@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'TomatoGrotesk';
+  src: url('/assets/fonts/TomatoGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TomatoGrotesk';
+  src: url('/assets/fonts/TomatoGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;  /* Dark background */
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 16 50% 72%;  /* Peach color from the site */
+    --primary-foreground: 0 0% 4%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 70% 65%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 16 50% 72%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    @apply bg-background text-foreground;
+    font-family: 'TomatoGrotesk', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'TomatoGrotesk', sans-serif;
+    font-weight: 500;
+  }
+}
+
+.smooth-scroll {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.cursor {
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--primary));
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.cursor-follower {
+  position: fixed;
+  z-index: 998;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s;
+}
